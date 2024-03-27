@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+    </style>
+  </head>
+  <body class="bg-red-100">
+  <div class="container">
+    <div class="space-y-4 mb-6">
+      <h1 class="text-4xl fw-800">Hi, {{email }}</h1>
+      <p>Here's your month report. We hope to see more of you this month!</p>
+    </div>
+    <div class="card rounded-3xl px-4 py-8 p-lg-10 mb-6">
+      <h3 class="text-center">Monthly Stats</h3>
+      <p class="text-center text-muted">{{email}}</p>
+      <table class="p-2 w-full">
+        <tbody>
+          <tr>
+            <td>No. of Orders</td>
+            <td class="text-right">{{ no_of_orders }}</td>
+          </tr>
+          <tr>
+            <td>No of products bought</td>
+            <td class="text-right">{{ no_of_products }}</td>
+          </tr>
+          <tr>
+            <td class="fw-700 border-top">Amount paid</td>
+            <td class="fw-700 text-right border-top">$42.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="my-6">
+      <p>If you have any questions, contact us at <a href="http://localhost:8080/">admin@grocerystore.com</a>.</p>
+    </div>
+  </div>
+</body>
+</html>
